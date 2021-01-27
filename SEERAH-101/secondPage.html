@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Seerah-101</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+
+</head>
+
+<body>
+  <!-- SideBar Start -->
+
+
+  <div class="header">
+    <h1 class="header-text">Seerah-101</h1>
+
+  </div>
+  <div class="">
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li> Seerah-101 <span>A place to learn about the prophet(PBUH)</span></li>
+        <li> <a href="home.html"> <img class="sidebarLogo" src="./Images/logo.png" alt=""> </a> </li>
+        <li> <a href="review.html" target="_self">Review</a></li>
+        <li> <a href="question.html" target="_self">Quiz</a></li>
+        <li> <a href="about.html" target="_self">about</a></li>
+        <li> <a href="contact.html" target="_self">Ask A ?</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="homeMenu2">
+
+  </div>
+
+
+
+  <!-- SideBar End -->
+
+
+  <script src="font.js"> </script>
+  <script src="loadPage.js"> </script>
+
+  <script>
+    var int = 24;
+    window.onload = function() {
+      fontIncrease();
+      loadPageNext();
+    };
+
+
+
+
+  </script>
+
+
+  <div id="printableArea" class="historyMenu fontSize">
+
+    <div id="content">
+
+      <p>huhiuh</p>
+    </div>
+
+    <div class="uiButtonMenu">
+      <button class = "uiLargeButton" type="button" name="text" onclick="loadPagePrevious()"> <img  class = "uiLargeButtonImg" src="./Images/left.png" alt=""> </button>
+      <button class = "uiLargeButton2"  type="button" onclick='loadPageNext()'> <img  class = "uiLargeButtonImg" src="./Images/right.png" alt=""> </button>
+    </div>
+
+
+
+
+  </div>
+
+  <div id = "locationBox" class="locationMenu fontSize">
+    <div id="locationContent">
+      <p> rgrgrg
+      </p>
+    </div>
+
+
+  </div>
+
+  <div id = "peopleBox" class="peopleMenu fontSize">
+    <div id="peopleContent">
+      <p> rgrgrgr
+      </p>
+    </div>
+
+
+
+
+  </div>
+  <div id = "notesBox" class="notesMenu fontSize">
+    <textarea name="name" rows="8" cols="80"></textarea>
+
+  </div>
+  <div>
+
+
+    <button  id="notesButton" onclick = "notesFunction()" type="button" name="text"> notes</button>
+
+    <button id="mobileButton" onclick = "mobileFunction()" type="button" name="text"> mobile </button>
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>

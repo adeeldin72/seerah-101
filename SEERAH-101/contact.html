@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Seerah-101</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  </style>
+</head>
+
+<body>
+  <!-- SideBar Start -->
+
+  <div class="header">
+    <h1 class="header-text">Seerah-101</h1>
+  </div>
+  <div class="">
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li> Seerah-101 <span>A place to learn about the prophet(PBUH)</span></li>
+        <li> <a href="home.html"> <img class="sidebarLogo" src="./Images/logo.png" alt=""> </a> </li>
+        <li> <a href="review.html" target="_self">Review</a></li>
+        <li> <a href="question.html" target="_self">Quiz</a></li>
+        <li> <a href="about.html" target="_self">about</a></li>
+        <li> <a href="contact.html" target="_self">Ask A ?</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-- SideBar End -->
+  <div class="homeMenu">
+
+  </div>
+
+  <div class="contactMenu">
+
+    <h1 class="contactMenuLogo">Contact Us</h1>
+
+    <form action="mailto:seerah-101@example.com" method="post" enctype="text/plain">
+
+
+      <h3 class="contactMenuText">Full Name:</h3>
+      <!-- <label for="flName">Full Name: </label> -->
+      <input class="inputName" type="text" name="name" placeholder="Insert Full Name">
+      <h3 class="contactMenuText">Email:</h3>
+      <!-- <label for="eMail">Email: </label> -->
+      <input class="inputEmail" type="text" name="mail" placeholder="Insert Email here">
+      <h3 class="contactMenuText">Message:</h3>
+      <!-- <label for="message">Message: </label> -->
+      <input class="inputMessage" type="text" name="message" placeholder="Insert Message here">
+
+      <input class="inputSubmit" type="submit" value="Submit">
+
+    </form>
+  </div>
+
+  <!-- disqus embed -->
+  <div id="disqus_thread"></div>
+  <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://seerah.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+
+</html>

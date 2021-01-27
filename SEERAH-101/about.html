@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Seerah-101</title>
+
+
+</head>
+
+<body>
+  <!-- SideBar Start -->
+
+  <div class="header">
+    <h1 class="header-text">Seerah-101</h1>
+  </div>
+  <div class="">
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li> Seerah-101 <span>A place to learn about the prophet(PBUH)</span></li>
+        <li> <a href="home.html"> <img class="sidebarLogo" src="./Images/logo.png" alt=""> </a> </li>
+        <li> <a href="review.html" target="_self">Review</a></li>
+        <li> <a href="question.html" target="_self">Quiz</a></li>
+        <li> <a href="about.html" target="_self">about</a></li>
+        <li> <a href="contact.html" target="_self">Ask A ?</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-- SideBar End -->
+
+
+
+
+  <div class="aboutContainers">
+    <img class="aboutLogo" src="./Images/logo.png" alt="">
+  </div>
+
+  <hr>
+
+  <div class="aboutContainers">
+    <p><u>Who are we?</u>
+    </p>
+    <p>We are a small website that aims to provide free religious and historical education for all visitors. Currently we are focusing specifically on the Seerah but we one aim to create a parent site that will include a diverse amount of
+      content suitable for all visitors.
+    </p>
+    <p></p>
+  </div>
+
+  <hr>
+
+  <div class="aboutContainers">
+    <p> <u> Why we created this site?</u>
+    </p>
+    <p>We created this site because in our experiences religion was something we were just told to do and when we asked questions we rarely every got our questions answered. Thus, we decided to first create a site that focuses on our religion Islam
+      at the
+      begining. Our goal is that kids and adults who are confused and/or not sure of Islam and the Prophet can find the answers they are looking for. Of course we have tried to make our site as unbiased as possible as in not to push our views on the
+      readers. </p>
+  </div>
+
+  <h2 id="staffLOGO">Staff</h2>
+  <img class="aboutSmallLogo" src="./Images/logo.png" alt="">
+  <div class="aboutContainers">
+
+    <p><u>Adeel : Developer, Student</u>
+    </p>
+    <p>I enjoy learning new things but find that at times it is quite difficult to find the resources you need. For example, you may enjoy drawing digital art but not have the money available to buy a drawing tablet and/or the time to sit down and
+      practice. In my case I enjoyed learning about Islam and web design. One problem though is I can learn something new everyday but once I stop using that information I'll forget about it. Likewise, I do not have the time to work on each of my
+      interests for a couple hours a day. So I decided to combine both of my interests into one product so I can simultaneously work on both things and retain the information I have learned.
+    </p>
+
+  </div>
+
+  <hr id="hrAbout">
+
+  <div class="aboutContainers">
+    <p>Hopefully this site helps you find the information you were looking. For any suggestions or questions please use the contact form to send us an email.
+    </p>
+  </div>
+
+
+
+  <div class="aboutContainers">
+    <p><button id="playAnimation" onclick="startTimer()">Play</button></p>
+
+    <div id="container">
+      <img id="animationContainer" src="./Images/01.png" alt="">
+    </div>
+
+    <script>
+      var intervalCounter; //holds timer information
+      var i = 0;
+
+      function startTimer() { //start timer
+        i = 0; //resets i to zero to restart animation
+        stopTimer(); //calls to stop interval timer so if animation already playing it stops the interval counter
+        intervalCounter = setInterval("myAnimation()", 100); //run function every 100ms.
+      }
+
+      function stopTimer() { //function to stop the timer
+        clearInterval(intervalCounter);
+      }
+
+      function myAnimation() {
+        var myID = document.getElementById("animationContainer"); //get img id
+        var currentSlide = i.toString(); //start concat process
+        var url = "./Images/0"
+        var urlMid = url.concat(currentSlide);
+        var urlFinal = urlMid.concat(".png") //final result to be passed
+
+        myID.src = urlFinal; //display current image
+        i++;
+
+        if (i >= 300) { //if reached final frame 300 stop the interval counter
+          stopTimer();
+
+        }
+      }
+    </script>
+  </div>
+<div class="youtubePlayer">
+  <div id="player"></div>
+</div>
+
+
+  <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'b3DbnxSBZg4', //id of the video I want to play
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+
+
+
+</body>
+
+</html>

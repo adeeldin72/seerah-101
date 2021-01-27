@@ -1,0 +1,1015 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Multi-Page CSS STARTS Now */
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Multi-Page CSS ENDS Now */
+/* UI BUTTON CSS STARTS Now */
+.uiButtonImg {
+  width: 50px;
+  height: auto;
+}
+
+.uiButton {
+  margin: 0px 10px;
+  padding: 10px;
+  border-radius: 200px;
+  background-color: Transparent;
+  outline-style: none;
+  float: right;
+}
+
+.uiButton:hover {
+  background-color: #71c9ce;
+}
+
+.uiLargeButtonImg {
+  width: 50%;
+  height: auto;
+}
+
+.uiLargeButton {
+  margin: 0px 10px;
+  padding: 10px;
+  border-radius: 200px;
+  background-color: #e3fdfd;
+  outline-style: none;
+  float: left;
+}
+
+.uiLargeButton:hover {
+  background-color: #71c9ce;
+}
+
+.uiLargeButton2 {
+  margin: 0px 10px;
+  padding: 10px;
+  border-radius: 200px;
+  background-color: #e3fdfd;
+  outline-style: none;
+  float: right;
+}
+
+.uiLargeButton2:hover {
+  background-color: #71c9ce;
+}
+
+.uiLargeButton3 {
+  margin: 0px 10px;
+  padding: 0px;
+  border-radius: 300px;
+  background-color: #e3fdfd;
+  outline-style: none;
+}
+
+.uiLargeButton3:hover {
+  background-color: #71c9ce;
+}
+
+#playButton {
+  width: 50%;
+  height: auto;
+}
+
+/* #mobileButton {
+  margin: 0px 10px;
+  padding: 10px;
+  border-radius: 200px;
+  background-color: Transparent;
+  outline-style: none;
+  float: right;
+}
+#mobileButton:hover {
+  background-color: #71c9ce;
+} */
+@media only screen and (max-device-width: 813px) {
+  .uiButtonImg {
+    width: 50px;
+    height: auto;
+    back
+  }
+
+  .uiButton {
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 200px;
+    background-color: Transparent;
+    outline-style: none;
+    float: right;
+  }
+
+  .uiButton:hover {
+    background-color: #71c9ce;
+  }
+
+  .uiLargeButtonImg {
+    width: 30%;
+    height: auto;
+  }
+
+  .uiLargeButton {
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 200px;
+    background-color: #e3fdfd;
+    outline-style: none;
+    float: left;
+  }
+
+  .uiLargeButton:hover {
+    background-color: #71c9ce;
+  }
+
+  .uiLargeButton2 {
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 200px;
+    background-color: #e3fdfd;
+    outline-style: none;
+    float: right;
+  }
+
+  .uiLargeButton2:hover {
+    background-color: #71c9ce;
+  }
+
+  .uiLargeButton3 {
+    margin: 0px 10px;
+    padding: 0px;
+    border-radius: 300px;
+    background-color: #e3fdfd;
+    outline-style: none;
+  }
+
+  .uiLargeButton3:hover {
+    background-color: #71c9ce;
+  }
+
+  #playButton {
+    width: 30%;
+    height: auto;
+  }
+}
+
+/* UI BUTTON CSS ENDS Now */
+/* Side Bar CSS Starts */
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  background-color: #71c9ce;
+  position: fixed;
+  height: 60px !important;
+  /* overflow: hidden; */
+  z-index: 25;
+}
+
+.header-text {
+  text-align: center;
+  margin-top: 5px;
+  color: #e3fdfd;
+  text-transform: uppercase;
+}
+
+.sidebarLogo {
+  width: 100%;
+}
+
+@media only screen and (max-device-width: 813px) {
+  #sidebarMenu {
+    width: 100% !important;
+  }
+
+  .homeMenu {
+    background-size: 200% 100% !important;
+  }
+
+  .homeMenu2 {
+    background-size: 200% 100% !important;
+    background-image: url("./Images/homeBack2.png") !important;
+  }
+
+  .homeMenu3 {
+    background-size: 200% 100% !important;
+    background-image: url("./Images/homeBack2.png") !important;
+  }
+
+  .sidebarLogo {
+    width: 45% !important;
+  }
+}
+
+#sidebarMenu {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  margin-top: 60px;
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in-out;
+  background: linear-gradient(180deg, #71c9ce 60%, #e3fdfd 80%);
+}
+
+.sidebarMenuInner {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li {
+  list-style: none;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li span {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.sidebarMenuInner li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+input[type="checkbox"]:checked~#sidebarMenu {
+  transform: translateX(0%);
+}
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+}
+
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+/* Side Bar CSS STOPS */
+/* HomePage CSS STARTS NOW */
+.homeMenu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  margin: 0px 0px auto 0px;
+  background-image: url("./Images/homeBack.png");
+  background-size: 100% 100%;
+}
+
+.homeMenu2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  margin: 0px 0px auto 0px;
+  background-image: url("./Images/homeBack2.png");
+  background-size: 100% 100%;
+}
+
+.homeMenu3 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  margin: 0px 0px auto 0px;
+  background-image: url("./Images/homeBack3.png");
+  background-size: 100% 100%;
+}
+
+.homeMenuContent {
+  border-radius: 50px;
+  margin: 10% auto 0px auto;
+  width: 75%;
+  background: white;
+  font-size: 125%;
+  text-align: center;
+  border-style: solid;
+  border-color: #f1f388;
+  border-width: 5px;
+  padding: 10% 5%;
+}
+
+@media only screen and (max-device-width: 813px) {
+  .homeMenuContent {
+    border-radius: 50px;
+    margin: 75px auto 0px auto;
+    width: 75%;
+    background: white;
+    font-size: 125%;
+    text-align: center;
+    border-style: solid;
+    border-color: #f1f388;
+    border-width: 5px;
+    padding: 10% 5%;
+  }
+}
+
+/* HomePage CSS STOPS NOW */
+/* Second Page CSS STARTS NOW */
+.buttons {
+  margin: 75px 0px 0px 75%;
+}
+
+div.historyMenu {
+  float: left;
+  border-radius: 25px;
+  overflow-y: scroll;
+  height: 80%;
+  width: 55%;
+  border-style: solid;
+  border-color: #f1f388;
+  border-width: 8px;
+  margin: 75px auto auto 25px;
+  padding: 20px 20px;
+  background-color: white;
+}
+
+b {
+  font-weight: bold;
+}
+
+div.locationMenu {
+  float: right;
+  overflow-y: scroll;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #f1f388;
+  border-width: 8px;
+  margin: 75px 20px auto auto;
+  height: 37%;
+  width: 35%;
+  padding: 20px 20px;
+  background-color: white;
+}
+
+.peopleMenu {
+  float: right;
+  overflow-y: scroll;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #f1f388;
+  border-width: 8px;
+  margin: 25px 20px auto auto;
+  height: 35%;
+  width: 35%;
+  padding: 20px 20px;
+  background-color: white;
+}
+
+.notesMenu {
+  display: none;
+  overflow-y: scroll;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #f1f388;
+  border-width: 8px;
+  margin: auto auto auto 25px;
+  height: 35%;
+  width: 55%;
+  padding: 20px 20px;
+  background-color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+}
+
+#notesButton {
+  margin-top: 30px;
+  margin-right: 65%;
+  margin-left: 40px;
+}
+
+#mobileButton {
+  margin-left: 20%;
+}
+
+@media only screen and (max-device-width: 813px) {
+  .buttons {
+    display: none;
+  }
+
+  div.historyMenu {
+    float: none;
+    border-radius: 255px;
+    overflow-y: scroll;
+    height: 80%;
+    width: 80%;
+    border-style: solid;
+    border-color: #f1f388;
+    border-width: 5px;
+    margin: 75px auto auto auto;
+    padding: 20px 20px;
+    background-color: white;
+  }
+
+  div.locationMenu {
+    float: none;
+    overflow-y: scroll;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #f1f388;
+    border-width: 5px;
+    margin: 20px auto auto auto;
+    height: 37%;
+    width: 80%;
+    padding: 20px 20px;
+    background-color: white;
+  }
+
+  .peopleMenu {
+    float: none;
+    overflow-y: scroll;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #f1f388;
+    border-width: 5px;
+    margin: 20px auto auto auto;
+    height: 35%;
+    width: 80%;
+    padding: 20px 20px;
+    background-color: white;
+  }
+
+  .notesMenu {
+    float: none;
+    overflow-y: scroll;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #f1f388;
+    border-width: 5px;
+    margin: 20px auto auto auto;
+    height: 35%;
+    width: 80%;
+    padding: 20px 20px;
+    background-color: white;
+  }
+
+  #notesButton {
+    margin-top: 20px;
+    margin-right: 0%;
+    margin-left: 40px;
+  }
+
+  #mobileButton {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1600px) {
+  div.historyMenu {
+    float: none !important;
+    border-radius: 25px;
+    overflow-y: scroll;
+    height: 80%;
+    width: 80%;
+    border-style: solid;
+    border-color: #f1f388;
+    border-width: 5px;
+    margin: 75px auto auto auto;
+    padding: 20px 20px;
+    background-color: white;
+  }
+
+  div.locationMenu {
+    float: none !important;
+    overflow-y: scroll;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #f1f388;
+    border-width: 5px;
+    margin: 20px auto auto auto;
+    height: 37%;
+    width: 80%;
+    padding: 20px 20px;
+    background-color: white;
+  }
+
+  .peopleMenu {
+    float: none !important;
+    overflow-y: scroll;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #f1f388;
+    border-width: 5px;
+    margin: 20px auto auto auto;
+    height: 35%;
+    width: 80%;
+    padding: 20px 20px;
+    background-color: white;
+  }
+  .notesMenu {
+    float: none;
+    overflow-y: scroll;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #f1f388;
+    border-width: 5px;
+    margin: 20px auto auto auto;
+    height: 35%;
+    width: 80%;
+    padding: 20px 20px;
+    background-color: white;
+  }
+
+  #notesButton {
+    margin-top: 20px;
+    margin-right: 0%;
+    margin-left: 40px;
+  }
+
+  #mobileButton {
+    margin-left: 5%;
+  }
+}
+
+/* Second Page CSS STOPS NOW */
+/* Second Page Inner Menu CSS STARTS NOW */
+/* .innerContent{
+  /* width: 100%; */
+/* padding: 2000px; */
+/* height: 100%; */
+/* }  */
+object {
+  width: 100%;
+  height: 1000px;
+}
+
+/* Second Page Inner Menu CSS STOPS NOW */
+/* Lesson Page Inner Content CSS STARTS NOW */
+.indent {
+  text-indent: 50px;
+}
+
+.title {
+  text-align: center;
+}
+
+/* Lesson Page Inner Content CSS STOPS NOW */
+/* Review Page CSS STARTS NOW */
+.reviewMenu {
+  overflow-y: scroll;
+  height: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #f1f388;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 75%;
+  margin: 75px auto auto auto;
+}
+
+.reviewButtons {
+  text-align: center;
+  width: auto;
+  margin: 10px auto;
+}
+
+/* Review Page CSS STOPS NOW */
+/* Quesstion Page CSS STARTS NOW */
+/* .reviewMenu {
+  overflow-y: scroll;
+  height: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #f1f388;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 75%;
+  margin: 75px auto auto auto;
+}
+
+.reviewButtons {
+  width: 206px;
+  margin: 10px auto;
+} */
+.questionMenu {
+  overflow-y: scroll;
+  height: 30%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #f1f388;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 75%;
+  margin: 75px auto auto auto;
+}
+
+.answerButtons {
+  overflow-y: scroll;
+  height: 30%;
+  padding: 20px;
+  width: 75%;
+  margin: 15px auto auto auto;
+}
+
+.questionButtons {
+  text-align: center;
+  width: 100%;
+  margin: 1px auto;
+}
+
+#answerButtonKeysA {
+  padding: 25px;
+  float: left;
+  margin: 15px 25px 30px 15px;
+  font-size: 20px;
+}
+
+#answerButtonKeysB {
+  padding: 25px;
+  float: left;
+  margin: 15px 25px 30px 15px;
+  font-size: 20px;
+}
+
+#answerButtonKeysC {
+  padding: 25px;
+  float: left;
+  margin: 15px 25px 30px 15px;
+  font-size: 20px;
+}
+
+#answerButtonKeysD {
+  padding: 25px;
+  float: left;
+  margin: 15px 25px 30px 15px;
+  font-size: 20px;
+}
+
+/* #questionKeyA, #questionKeyB, #questionKeyC, #questionKeyD {
+  font-size: 15px;
+} */
+.answerA, .answerB, .answerC, .answerD {
+  width: 50%;
+  float: left;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1600px) {
+  .answerButtons {
+    height: auto;
+    padding: 20px;
+    width: auto;
+    margin: 15px auto auto auto;
+  }
+
+  .answerButtonKeys {
+    padding: 15px !important;
+    margin: 5px;
+    font-size: 20px;
+  }
+
+  .questionButtons {
+    text-align: center;
+    width: 100%;
+    margin: 35px auto;
+  }
+}
+
+@media only screen and (max-device-width: 813px) {
+  .answerButtonKeys {
+    padding: 15px !important;
+    margin: 5px;
+    font-size: 20px;
+  }
+
+  .answerButtons {
+    height: auto;
+    padding: 20px;
+    width: 250px;
+    margin: 15px auto auto auto;
+  }
+
+  .questionButtons {
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  #questionKeyA, #questionKeyB, #questionKeyC, #questionKeyD {
+    font-size: 12px;
+  }
+
+  .answerA, .answerB, .answerC, .answerD {
+    width: auto;
+  }
+}
+
+/* Question Page CSS STOPS NOW */
+/* Question Page ID's STOPS NOW */
+#questionText {
+  text-align: center;
+}
+
+/* Question Page ID's STARTS NOW */
+/* Contact Page CSS STARTS NOW */
+.contactMenu {
+  overflow-y: scroll;
+  height: 80%;
+  padding: 20px;
+  width: 75%;
+  margin: 75px auto auto auto;
+}
+
+.contactMenuText {
+  text-align: center;
+}
+
+.contactMenuLogo {
+  text-align: center;
+  font-size: 500%;
+}
+
+.inputName {
+  display: block;
+  background-color: #e3fdfd;
+  margin: 10px auto auto auto;
+  padding: 10px 1px 10px 1px;
+  width: 50%;
+  border-radius: 50px;
+  border-style: solid;
+  font-size: 25px;
+  text-align: center;
+  outline-style: none;
+}
+
+.inputEmail {
+  display: block;
+  background-color: #e3fdfd;
+  margin: 10px auto auto auto;
+  padding: 10px 1px 10px 1px;
+  width: 50%;
+  border-radius: 50px;
+  border-style: solid;
+  font-size: 25px;
+  text-align: center;
+  outline-style: none;
+}
+
+.inputMessage {
+  display: block;
+  background-color: #e3fdfd;
+  margin: 10px auto auto auto;
+  padding: 100px 1px 100px 1px;
+  width: 50%;
+  border-radius: 50px;
+  border-style: solid;
+  font-size: 25px;
+  text-align: center;
+  outline-style: none;
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inputSubmit {
+  display: block;
+  background-color: #393e46;
+  margin: 15px auto auto auto;
+  padding: 1px 20px 1px 20px;
+  width: auto;
+  border-radius: 50px;
+  border-style: solid;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  outline-style: none;
+}
+
+@media only screen and (max-device-width: 813px) {
+  .contactMenuText {
+    text-align: center;
+    margin: 5px;
+  }
+
+  .contactMenuLogo {
+    text-align: center;
+    font-size: 300%;
+  }
+
+  .inputName {
+    padding: 5px 1px 5px 1px;
+    width: auto;
+    font-size: 20px;
+  }
+
+  .inputEmail {
+    padding: 5px 1px 5px 1px;
+    width: auto;
+    font-size: 20px;
+  }
+
+  .inputMessage {
+    padding: 100px 5% 100px 5%;
+    width: auto;
+    font-size: 20px;
+  }
+
+  .inputSubmit {
+    padding: 1px 20px 1px 20px;
+    font-size: 20px;
+  }
+}
+
+/* Contact Page CSS STOPS NOW */
+/* About Page CSS STARTS NOW */
+hr {
+  border-style: dotted;
+  border-bottom: none;
+  width: 50px;
+  border-width: 25px;
+  margin-top: 40px;
+  color: #40514e;
+}
+
+.aboutContainers {
+  text-align: center;
+  font-size: 150%;
+  padding: 20px;
+  width: 50%;
+  margin: 15px auto auto auto;
+}
+
+.aboutSmallLogo {
+  margin: 20px 20px 0px 15%;
+  float: left;
+  background-color: black;
+  border-radius: 200px;
+  width: 180px;
+  height: auto;
+}
+
+.aboutLogo {
+  margin-top: 75px;
+  width: 400px;
+  height: auto;
+}
+
+#staffLOGO {
+  text-align: center;
+}
+
+#hrAbout {
+  margin-top: 100px;
+}
+
+@media only screen and (max-device-width: 813px) {
+  .aboutContainers {
+    width: 75%;
+  }
+
+  .aboutSmallLogo {
+    position: relative;
+    z-index: -1;
+    left: 25%;
+    margin: 20px 20px;
+    background-color: black;
+    border-radius: 200px;
+    width: 150px;
+    height: auto;
+    float: none;
+  }
+
+  .aboutLogo {
+    width: 200px;
+    height: auto;
+  }
+}
+
+
+
+/* About Page CSS STOPS NOW */
+/* About Page Animation + Youtube STARTS NOW */
+
+.youtubePlayer{
+  text-align: center;
+}
+
+#animationContainer {
+  width: 100%;
+  height: auto;
+}
+
+
+@media only screen and (max-device-width: 813px) {
+  #container {
+    margin: auto auto;
+    z-index: -10;
+    width: 100%;
+    height: 200px;
+    position: relative;
+
+  }
+
+  .youtubePlayer{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  }
+
+  #player{
+    width: 100%;
+    height: auto;
+  }
+
+
+}
+
+/* About Page Animation STOPS NOW */

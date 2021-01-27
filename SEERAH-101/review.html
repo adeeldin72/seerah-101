@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Seerah-101</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script type="text/javascript" src="jquery-3.5.1.min.js"> </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+</head>
+
+<body>
+  <!-- SideBar Start -->
+
+  <div class="header">
+    <h1 class="header-text">Seerah-101</h1>
+  </div>
+  <div class="">
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li> Seerah-101 <span>A place to learn about the prophet(PBUH)</span></li>
+        <li> <a href="home.html"> <img class="sidebarLogo" src="./Images/logo.png" alt=""> </a> </li>
+        <li> <a href="review.html" target="_self">Review</a></li>
+        <li> <a href="question.html" target="_self">Quiz</a></li>
+        <li> <a href="about.html" target="_self">about</a></li>
+        <li> <a href="contact.html" target="_self">Ask A ?</a></li>
+
+      </ul>
+    </div>
+  </div>
+  <!-- SideBar End -->
+
+
+
+  <div class="homeMenu3"> </div>
+
+  <script src="font.js"> </script>
+
+
+  <script src="loadPage.js"> </script>
+
+
+
+
+  <script>
+    window.onload = function() {
+      fontIncrease();
+
+    };
+
+  </script>
+
+  <div class="reviewMenu fontSize">
+    <div>
+      <h3 id="reviewTitle"></h3>
+      <p id="review1"></p>
+      <p id="review2"></p>
+      <p id="review3"></p>
+      <p id="review4"></p>
+
+    </div>
+
+
+  </div>
+  <script src="review.js"> </script>
+
+  <script>
+    loadReviewNext();
+    // stopPlay();
+  </script>
+
+  <div class="reviewButtons">
+
+    <button class = "uiLargeButton3" type="button" onclick="loadReviewPrevious()"> <img class = "uiLargeButtonImg" src="./Images/left.png" alt=""> </button>
+    <button class = "uiLargeButton3"  type="button" onclick = "pauseOrPlay()">  <img id = "playButton" src="./Images/play.png" alt=""> </button>
+    <button class = "uiLargeButton3"  type="button" onclick="loadReviewNext()"> <img class = "uiLargeButtonImg"  src="./Images/right.png" alt=""> </button>
+
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
